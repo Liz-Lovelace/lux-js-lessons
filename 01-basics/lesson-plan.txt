@@ -1,0 +1,29 @@
+Initial setup.
+
+sudo snap install code --classic
+
+(if you already have vscode installed, you can reset it completely with these commands)
+rm -rf ~/.config/Code
+rm -rf ~/.vscode
+
+Ctrl + Shift + P  =>  Open User Settings (JSON)
+and then paste this code there:
+{
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.autoIndent": "none",
+    "editor.formatOnType": false,
+    "editor.wordBasedSuggestions": false,
+    "editor.tabCompletion": "off",
+    "editor.hover.enabled": false,
+    "editor.quickSuggestions": false,
+    "editor.lightbulb.enabled": false,
+    "editor.parameterHints.enabled": false
+}
+
+install live share vscode extension:
+https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare
+
+install bun
+curl -fsSL https://bun.sh/install | bash
